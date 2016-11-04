@@ -1,5 +1,5 @@
 # AWS_IoT_Python
-This repository contains the steps and the code to Access the AWS IoT service using Python3, Paho-MQTT on Windows, Linux/Ubuntu and Raspberry Pi3.                                                                                                                             
+This repository contains the steps and the code to Access the AWS IoT service using Python3, Paho-MQTT on Raspberry Pi3.                                                                                                                                                       **Note:** This code works for Raspberry Pi3. For Windows, Linux/Ubuntu, just remove the RPi imports and GPIO's and insert the Interface according to your OS                                                                                         
 
 # Requirements:																   
 a) **Python 3.4 or above** [https://www.python.org/downloads/] (https://www.python.org/downloads/) 															   
@@ -45,7 +45,7 @@ The publisher code reads the state of the pins of **Raspberry Pi3** (change Pin 
 If the LED's glow, it's state is '1' else '0' (You can make changes in the code as you want).     
 
 The subscriber code fetches the state of the LED's from AWS IoT and prints it on the second terminal.
-
+                                                                                                                                                                                                                                                                               
 
 ## To Test the sample Python Programs:                                                                                                   
 i) In one terminal, run the **AWS_IoT_pub.py** code using 
