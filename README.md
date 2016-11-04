@@ -38,8 +38,7 @@ git clone https://github.com/anujdutt9/AWS_IoT_Python.git
 or download it as a ".zip" file.
 
 ## Running the Code:
-The example code in the repository is:                                                                                           
-**Publisher and Subscriber Code**                                                                                                   
+The example code in the repository is for **Publisher and Subscriber**                                                                                                   
 
 The **Publisher and Subscriber** folder contains **AWS_IoT_pub.py** file that **publishes(sends)** the data to the AWS IoT service and **AWS_IoT_sub.py** that **subscribes** to the service and shows(get) the data from the AWS IoT on the second Terminal. Currently, **AWS_IoT_sub.py** subscribes to any topic and will show all of the received msgs but we can customize it to get a perticular message.                         
 The publisher code reads the state of the pins of **Raspberry Pi3** (change Pin Numbers for other Raspberry Pi Boards) and sends this to the AWS IoT updating the state as its changed.                                                                                                                                                                                                                                                                                                                                                                     For this, we have connected some LED's to the pins of the Raspberry Pi that represent the state of the pins.                             
