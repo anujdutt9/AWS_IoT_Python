@@ -71,29 +71,25 @@ while True:
 		# Update LED Data on AWS IoT in Real Time
 		# State tells the current and previous state of LED
 		# Reported gives the timestamp
-        jsonMessage = "{ \"state\": { \"reported\": { \"Led\": " + str(state) + "} } }"
-        mqttc.publish("$aws/things/Thing_Name/shadow/update", jsonMessage, qos=1)
+        	jsonMessage = "{ \"state\": { \"reported\": { \"Led\": " + str(state) + "} } }"
+        	mqttc.publish("$aws/things/Thing_Name/shadow/update", jsonMessage, qos=1)
 
 		# Publish the Data to AWS IOT and get it on Subscription
-        mqttc.publish("LED1: ", state1, qos=1)
-        print("LED1: " + "%d" % state1 )
+        	mqttc.publish("LED1: ", state1, qos=1)
+        	print("LED1: " + "%d" % state1 )
 		sleep(1.0)
 		
 		# Update LED Data on AWS IoT in Real Time
 		GPIO.output(led1,GPIO.HIGH)
-        jsonMessage = "{ \"state\": { \"reported\": { \"Led\": " + str(state) + "} } }"
-        mqttc.publish("$aws/things/Thing_Name/shadow/update", jsonMessage, qos=1)
-        sleep(1.0)
+        	jsonMessage = "{ \"state\": { \"reported\": { \"Led\": " + str(state) + "} } }"
+        	mqttc.publish("$aws/things/Thing_Name/shadow/update", jsonMessage, qos=1)
+        	sleep(1.0)
 		# Publish the Data to AWS IOT and get it on Subscription
-        mqttc.publish("LED1: ", state1, qos=1)
-        print("LED1: " + "%d" % state1 )
-		
+        	mqttc.publish("LED1: ", state1, qos=1)
+        	print("LED1: " + "%d" % state1 )		
     else:
 		print("Waiting for Connection...")
 
 ser.close()
 GPIO.cleanup()
-
-
-
-        
+      
