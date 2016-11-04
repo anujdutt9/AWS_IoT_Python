@@ -38,15 +38,15 @@ git clone https://github.com/anujdutt9/AWS_IoT_Python.git
 or download it as a ".zip" file.
 
 ## Running the Code:
-There are two example code in the repository:                                                                                           
-1. **Publisher and Subscriber Code**                                                                                                         
-2. **Code for Raspberry Pi**
+The example code in the repository is:                                                                                           
+**Publisher and Subscriber Code **                                                                                                   
 
 a) The **Publisher and Subscriber** folder contains **AWS_IoT_pub.py** file that **publishes(sends)** the data to the AWS IoT service and **AWS_IoT_sub.py** that **subscribes** to the service and shows(get) the data from the AWS IoT on the second Terminal. Currently, **AWS_IoT_sub.py** subscribes to any topic and will show all of the received msgs but we can customize it to get a perticular message.                         
-                                                                                                                                         
-b) The second file consists of the code that reads the state of the pins of **Raspberry Pi3** (change Pin Numbers for other Raspberry Pi Boards) and sends this to the AWS IoT updating the state as its changed.                                                                 
-For this, we have connected some LED's to the pins of the Raspberry Pi that represent the state of the pins.                             
+The publisher code reads the state of the pins of **Raspberry Pi3** (change Pin Numbers for other Raspberry Pi Boards) and sends this to the AWS IoT updating the state as its changed.                                                                                                                                                                                                                               For this, we have connected some LED's to the pins of the Raspberry Pi that represent the state of the pins.                             
 If the LED's glow, it's state is '1' else '0' (You can make changes in the code as you want).     
+
+The subscriber code fetches the state of the LED's from AWS IoT and prints it on the second terminal.
+
 
 ## To Test the sample Python Programs:                                                                                                   
 i) In one terminal, run the **AWS_IoT_pub.py** code using 
