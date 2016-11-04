@@ -75,8 +75,8 @@ while True:
         	mqttc.publish("$aws/things/Thing_Name/shadow/update", jsonMessage, qos=1)
 
 		# Publish the Data to AWS IOT and get it on Subscription
-        	mqttc.publish("LED1: ", state1, qos=1)
-        	print("LED1: " + "%d" % state1 )
+        	mqttc.publish("LED: ", state, qos=1)
+        	print("LED: " + "%d" % state )
 		sleep(1.0)
 		
 		# Update LED Data on AWS IoT in Real Time
@@ -85,8 +85,8 @@ while True:
         	mqttc.publish("$aws/things/Thing_Name/shadow/update", jsonMessage, qos=1)
         	sleep(1.0)
 		# Publish the Data to AWS IOT and get it on Subscription
-        	mqttc.publish("LED1: ", state1, qos=1)
-        	print("LED1: " + "%d" % state1 )		
+        	mqttc.publish("LED: ", state, qos=1)
+        	print("LED: " + "%d" % state )		
     else:
 		print("Waiting for Connection...")
 
