@@ -19,10 +19,10 @@ GPIO.setmode(GPIO.BCM)
 led = 21
 
 # Set Pin as Output
-GPIO.setup(led1,GPIO.OUT)       # Pin 21
+GPIO.setup(led,GPIO.OUT)       # Pin 21
 
 # Initialize LED's
-GPIO.output(led1,GPIO.LOW)
+GPIO.output(led,GPIO.LOW)
 
 
 # Check if the Connection to AWS Cloud has been Made.
